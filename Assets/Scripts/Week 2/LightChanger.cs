@@ -67,6 +67,39 @@ public class LightChanger : MonoBehaviour
     public void ChangeLightColor(Color santaClaus)
     {
         lightWeWantToChange.color = santaClaus;
+
+        if(lightWeWantToChange.color == Color.green)
+        {
+            lightWeWantToChange.intensity = 100f;
+        }
+        else if(lightWeWantToChange.color == Color.red)
+        {
+            lightWeWantToChange.transform.position += Vector3.right * 3;
+        }
+        else if(lightWeWantToChange.color == Color.blue)
+        {
+            lightWeWantToChange.gameObject.SetActive(false);
+        }
+        else //None of the conditions above were met, so do this if it's anything other than green, red, or blue.
+        {
+            lightWeWantToChange.transform.position = Vector3.zero;
+        }
+
+        if(lightWeWantToChange.color == Color.green || lightWeWantToChange.color == Color.red)
+        {
+            //If the color is green or red, it will run this code.
+        }
+
+        if(lightWeWantToChange.color == Color.blue && lightWeWantToChange.intensity > 50f)
+        {
+            //If the color is blue AND the intensity of the light is greater than 50, it will run this code.
+        }
+
+        if(lightWeWantToChange.color == Color.white || (lightWeWantToChange.color == Color.black && lightWeWantToChange.intensity <= 25))
+        {
+            //If the color is white OR the color is both black and its intensity is less than or greater than 25, it will run this code.
+        }
+
     }
 
     private void OnEnable()
