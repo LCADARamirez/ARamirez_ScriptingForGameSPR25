@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class ListTest : MonoBehaviour
+public class AllCannonballs : MonoBehaviour
 {
     public List<Cannonball> cannonballs = new List<Cannonball>();
 

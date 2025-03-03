@@ -662,7 +662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cannonballs: []
-  cannonballPrefab: {fileID: 0}
+  cannonballPrefab: {fileID: 1559868375342475941, guid: a980a3f103a48a84a9d3dfbfe69d36b2, type: 3}
 --- !u!4 &105171532
 Transform:
   m_ObjectHideFlags: 0
