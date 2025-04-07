@@ -13,11 +13,13 @@ TagManager:
   - DownForce
   - Key
   - Door
+  - Enemy
+  - VisionCone
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - IgnoreNavObstacle
   - Water
   - UI
   - 

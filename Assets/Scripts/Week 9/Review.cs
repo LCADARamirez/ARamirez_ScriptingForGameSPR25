@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ListReview : MonoBehaviour
+public class ReviewList : MonoBehaviour
 {
 
     public List<GameObject> cubes;
